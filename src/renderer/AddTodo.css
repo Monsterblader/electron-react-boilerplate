@@ -1,0 +1,9 @@
+input {
+  border-radius: 10px;
+  font-size: 1.3em;
+  padding: 10px 20px;
+}
+
+.add-todo {
+  margin: 5px;
+}

@@ -1,0 +1,12 @@
+.todo-list {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.todo {
+  cursor: pointer;
+}
+
+.todo.done {
+  text-decoration: line-through;
+}
