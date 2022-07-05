@@ -138,5 +138,13 @@ app
   .catch(console.log);
 
 if (false) {
-  NodeMailer().catch(console.error);
+  const message = {
+    from: '"Fred Foo 👻" <monsterblader@gmail.com>',
+    to: 'blader_albert@yahoo.com',
+    subject: 'Hello ✔',
+    text: 'Hello world?',
+    html: '<b>Hello world?</b>',
+  };
+
+  NodeMailer(message).catch(console.error);
 }
