@@ -14,6 +14,7 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
+import NodeMailer from './NodeMailer';
 
 class AppUpdater {
   constructor() {
@@ -135,3 +136,7 @@ app
     });
   })
   .catch(console.log);
+
+if (false) {
+  NodeMailer().catch(console.error);
+}
