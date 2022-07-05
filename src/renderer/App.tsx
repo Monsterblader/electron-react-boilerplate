@@ -9,7 +9,6 @@ import AddTodo from './AddTodo';
 const Hello = () => {
   const storedTodos = localStorage.getItem('todos') || '[]';
   const [todos, setTodos] = React.useState(JSON.parse(storedTodos));
-  debugger;
 
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos));
